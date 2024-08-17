@@ -1,0 +1,11 @@
+numerat =
+RANKX(
+    FILTER(
+        'all_sport_gen_site',
+        'all_sport_gen_site'[standardized_match] = EARLIER('all_sport_gen_site'[standardized_match])
+    ),
+    'all_sport_gen_site'[date],
+    ,
+    ASC,
+    Dense
+)

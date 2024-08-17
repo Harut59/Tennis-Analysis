@@ -1,0 +1,13 @@
+#must be in all_sport_gen_site
+AverageExcludingZeros =
+DIVIDE(
+    SUM('all_sport_gen_site'[Total]),
+    COUNTAX(
+        FILTER(
+            'all_sport_gen_site',
+            'all_sport_gen_site'[Total] <> 0
+        ),
+        'all_sport_gen_site'[Total]
+    ),
+    BLANK()  // Handle divide-by-zero errors
+)

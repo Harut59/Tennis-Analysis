@@ -1,0 +1,7 @@
+#all_sport_gen_site_group_by_last_10_row
+Difference =
+IF(
+    ISBLANK(RELATED(avg_total[avarag_total])) || ISBLANK('all_sport_gen_site_group_by_last_10_row'[Total]),
+    BLANK(),
+    ABS('all_sport_gen_site_group_by_last_10_row'[Total] - RELATED('avg_total'[avarag_total]))
+)
