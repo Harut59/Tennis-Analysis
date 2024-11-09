@@ -186,7 +186,7 @@ while True:
                                                     f"Data from {file_path} has been successfully inserted into the {table_name} table in the {database} database.")
 
                                             mysql_user = 'root'
-                                            mysql_password = '6Oct19926oct1992!'
+                                            mysql_password = 'your_password'
                                             mysql_host = 'localhost'
                                             mysql_database = 'new_schema'
                                             mysql_table_name = 'avg_total_in_sql'
@@ -325,7 +325,7 @@ while True:
 
 
                                             mysql_user = 'root'
-                                            mysql_password = '6Oct19926oct1992!'
+                                            mysql_password = yourpassword'
                                             mysql_host = 'localhost'
                                             mysql_database = 'new_schema'
                                             mysql_table_name = 'avg_fora_in_sql'
